@@ -25,24 +25,24 @@ func main ()  {
     fmt.Println(bigfloat)
     fmt.Printf("Variable is of type: %T\n", bigfloat)
 
-	// default values and some aliases
-	var anotherVariable int
-	fmt.Println(anotherVariable)  // automatically initializes it to 0 and no garbage value 
-	fmt.Printf("Variable is of type: %T \n", anotherVariable)
+   // default values and some aliases
+   var anotherVariable int
+   fmt.Println(anotherVariable)  // automatically initializes it to 0 and no garbage value 
+   fmt.Printf("Variable is of type: %T \n", anotherVariable)
+
+   var anotherVar string
+   fmt.Println(anotherVar) // automatically initializes it to blank and no garbage value 
+   fmt.Printf("Variable is of type: %T \n", anotherVar)
+
+    // implicit type
+    var website = "www.google.com" // lexer automatically assigns string type to it 
+    fmt.Println(website)
+    // website = 3 as cannot use 3 (untyped int constant) as string value in  
 	
-	var anotherVar string
-	fmt.Println(anotherVar) // automatically initializes it to blank and no garbage value 
-	fmt.Printf("Variable is of type: %T \n", anotherVar)
+   // no var style
+   numberOfUser := 300000.0 // := colon and equal which is walrus operator 
+   fmt.Println(numberOfUser)
 	
-	// implicit type
-	var website = "www.google.com" // lexer automatically assigns string type to it 
-	fmt.Println(website)
-	// website = 3 as cannot use 3 (untyped int constant) as string value in  
-	
-	// no var style
-	numberOfUser := 300000.0 // := colon and equal which is walrus operator 
-	fmt.Println(numberOfUser)
-	
-	fmt.Println(LoginToken)
-	fmt.Printf("Variable is of type: %T \n", LoginToken)
+   fmt.Println(LoginToken)
+   fmt.Printf("Variable is of type: %T \n", LoginToken)
 }
